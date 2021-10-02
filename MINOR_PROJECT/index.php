@@ -12,7 +12,6 @@
    	<a href=""><p>User Login</p></a>
    	<a href=""><p>Vendor Login</p></a>
    	<a href=""><p>Admin Login</p></a>
-   </ul>
 </div>   
    
 	
