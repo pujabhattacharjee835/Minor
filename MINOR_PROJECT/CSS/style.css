@@ -1,7 +1,4 @@
-body{
-	
-}
-
+/*homepage*/
 
 p{
 	text-align: center;
@@ -17,8 +14,11 @@ p{
 	margin: 10% 30% 20% 30%;
 	padding: 20px;
 	background-color: black;
-	opacity: 0.6;
+    opacity: 0.6;
+
+
 }
+
 
 a{
   color: white;
@@ -29,6 +29,70 @@ a{
 p:hover{
   background: linear-gradient(90deg, #ada996 0%, #f2f2f2 33%, #dbdbdb 66%, #eaeaea 100%);
   color: black;
-  border-color: black ;
+ 
+
 	
+}
+
+
+/*REGISTRATION_FORM*/
+
+
+.reg-form{
+	margin-top: 10%;
+	margin-right: 20%;
+	margin-left: 20%;	
+
+}
+
+
+
+#reg_no,#pass,#name,#phone{
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 1px 30px;
+	border: none;
+	box-shadow: 2px 4px 18px black;
+
+}
+
+
+
+.heading1{
+	font-size: 30px;
+	color: white;
+	font-family: Lucida Bright;
+	text-shadow: 2px 4px 12px black;
+}
+
+form{
+	text-align: center;
+}
+
+#submit1{
+   background: linear-gradient(90deg, #000428 0%, #004e92 100%);
+   font-size: 20px;
+   border: none;
+   border-radius: 1px 30px 1px;
+   color:  white;
+   padding: 15px;
+   margin-top: 5%;
+   
+   
+}
+
+#submit1:hover{
+	box-shadow: 2px 6px 18px black;
+	cursor: pointer;
+}
+
+
+/*login_page*/
+
+.login-form{
+	margin-top: 10%;
+	margin-right: 20%;
+	margin-left: 20%;	
+
 }
