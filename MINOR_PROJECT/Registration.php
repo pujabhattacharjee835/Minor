@@ -1,3 +1,30 @@
+<?php 
+
+if(isset($_POST['submit'])){
+	$Registration_No = $_POST['reg_id'];
+	$Password = $_POST['password'];
+	$Name = $_POST['name'];
+	$Phone_No = $_POST['phone'];
+	
+	$conn=mysqli_connect('localhost','root','','MINOR');
+
+	$query = "INSERT INTO UserData(Registration_No,Password,Name,Phone_No)VALUES('$Registration_No','$Password','$Name','Phone_No')";
+
+	$result = mysqli_query($conn,$query);
+
+	if($result){
+		echo "<center><h3>You have Registered Successfully</h3></center>";
+	}
+
+	if(!$result){
+		echo "Not connected";
+	}
+
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +36,7 @@
 
 <div class="reg-form">
 
-	<form action="" method="">
+	<form action="Registration.php" method="POST">
 		<h1 class="heading1">Fill In The Form To Register</h1>
 		
 		<input type="text" name="reg_id" placeholder="Registration No." id="reg_no"><br><br>
